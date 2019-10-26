@@ -15,8 +15,9 @@
 		467CC8D023644FA5009BBEF5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8CF23644FA5009BBEF5 /* Note.swift */; };
 		467CC8D223644FE7009BBEF5 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8D123644FE7009BBEF5 /* Enums.swift */; };
 		467CC8D4236450EB009BBEF5 /* NoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8D3236450EB009BBEF5 /* NoteObject.swift */; };
-		467CC8D623645240009BBEF5 /* NoteDetail VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8D523645240009BBEF5 /* NoteDetail VC.swift */; };
+		467CC8D623645240009BBEF5 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8D523645240009BBEF5 /* NoteDetailVC.swift */; };
 		467CC8D823645DAD009BBEF5 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8D723645DAD009BBEF5 /* NoteCell.swift */; };
+		467CC8DA23647570009BBEF5 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8D923647570009BBEF5 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		467CC8CF23644FA5009BBEF5 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		467CC8D123644FE7009BBEF5 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		467CC8D3236450EB009BBEF5 /* NoteObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteObject.swift; sourceTree = "<group>"; };
-		467CC8D523645240009BBEF5 /* NoteDetail VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetail VC.swift"; sourceTree = "<group>"; };
+		467CC8D523645240009BBEF5 /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
 		467CC8D723645DAD009BBEF5 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		467CC8D923647570009BBEF5 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				467CC8BB2364449C009BBEF5 /* NoteVC.swift */,
-				467CC8D523645240009BBEF5 /* NoteDetail VC.swift */,
+				467CC8D523645240009BBEF5 /* NoteDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,6 +109,7 @@
 			children = (
 				467CC8D123644FE7009BBEF5 /* Enums.swift */,
 				467CC8D3236450EB009BBEF5 /* NoteObject.swift */,
+				467CC8D923647570009BBEF5 /* Helpers.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -185,8 +188,9 @@
 				467CC8BC2364449C009BBEF5 /* NoteVC.swift in Sources */,
 				467CC8BA2364449C009BBEF5 /* AppDelegate.swift in Sources */,
 				467CC8D223644FE7009BBEF5 /* Enums.swift in Sources */,
+				467CC8DA23647570009BBEF5 /* Helpers.swift in Sources */,
 				467CC8D023644FA5009BBEF5 /* Note.swift in Sources */,
-				467CC8D623645240009BBEF5 /* NoteDetail VC.swift in Sources */,
+				467CC8D623645240009BBEF5 /* NoteDetailVC.swift in Sources */,
 				467CC8D823645DAD009BBEF5 /* NoteCell.swift in Sources */,
 				467CC8D4236450EB009BBEF5 /* NoteObject.swift in Sources */,
 			);

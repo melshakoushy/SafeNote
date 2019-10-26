@@ -69,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="SafeNote" id="67q-uR-bFN">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="5sE-IT-fof"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="iIT-rf-1RN">
                             <color key="tintColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -84,7 +85,7 @@
         <!--Note DetailVC-->
         <scene sceneID="i3j-tx-xlk">
             <objects>
-                <viewController id="UTk-qc-AoS" customClass="NoteDetailVC" customModule="SafeNote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NoteDetailVC" id="UTk-qc-AoS" customClass="NoteDetailVC" customModule="SafeNote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vz3-Vo-aQw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,17 +98,21 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LT-xp-si2">
-                                <rect key="frame" x="127.5" y="599" width="120" height="43"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                <rect key="frame" x="20" y="599" width="335" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
                                 <state key="normal" title="Lock Note">
                                     <color key="titleColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="lockNoteBtnPressed:" destination="UTk-qc-AoS" eventType="touchUpInside" id="ZPh-Iu-aSj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="8LT-xp-si2" firstAttribute="centerX" secondItem="vz3-Vo-aQw" secondAttribute="centerX" id="0wx-Qb-W6g"/>
                             <constraint firstItem="8LT-xp-si2" firstAttribute="top" secondItem="CBd-If-z9J" secondAttribute="bottom" constant="25" id="807-He-QTh"/>
+                            <constraint firstItem="8LT-xp-si2" firstAttribute="leading" secondItem="V0a-U1-faR" secondAttribute="leading" constant="20" id="GnC-c1-IEr"/>
+                            <constraint firstItem="V0a-U1-faR" firstAttribute="trailing" secondItem="8LT-xp-si2" secondAttribute="trailing" constant="20" id="THn-Qj-Hdq"/>
                             <constraint firstItem="CBd-If-z9J" firstAttribute="leading" secondItem="V0a-U1-faR" secondAttribute="leading" constant="25" id="Y79-AI-fSh"/>
                             <constraint firstItem="V0a-U1-faR" firstAttribute="bottom" secondItem="8LT-xp-si2" secondAttribute="bottom" constant="25" id="dg7-AC-ep0"/>
                             <constraint firstItem="V0a-U1-faR" firstAttribute="trailing" secondItem="CBd-If-z9J" secondAttribute="trailing" constant="25" id="jzS-mf-dQ9"/>
@@ -115,6 +120,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="V0a-U1-faR"/>
                     </view>
+                    <connections>
+                        <outlet property="noteTxtView" destination="CBd-If-z9J" id="bSB-1z-3nN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lD2-94-DcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,6 +136,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fbB-M0-IPF">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                             <color key="textColor" red="0.91764705882352937" green="0.66274509803921566" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
