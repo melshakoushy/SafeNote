@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		467CC8BA2364449C009BBEF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8B92364449C009BBEF5 /* AppDelegate.swift */; };
-		467CC8BC2364449C009BBEF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8BB2364449C009BBEF5 /* ViewController.swift */; };
+		467CC8BC2364449C009BBEF5 /* NoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8BB2364449C009BBEF5 /* NoteVC.swift */; };
 		467CC8BF2364449C009BBEF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467CC8BD2364449C009BBEF5 /* Main.storyboard */; };
 		467CC8C1236444A0009BBEF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467CC8C0236444A0009BBEF5 /* Assets.xcassets */; };
 		467CC8C4236444A0009BBEF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467CC8C2236444A0009BBEF5 /* LaunchScreen.storyboard */; };
+		467CC8D023644FA5009BBEF5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8CF23644FA5009BBEF5 /* Note.swift */; };
+		467CC8D223644FE7009BBEF5 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8D123644FE7009BBEF5 /* Enums.swift */; };
+		467CC8D4236450EB009BBEF5 /* NoteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8D3236450EB009BBEF5 /* NoteObject.swift */; };
+		467CC8D623645240009BBEF5 /* NoteDetail VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8D523645240009BBEF5 /* NoteDetail VC.swift */; };
+		467CC8D823645DAD009BBEF5 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467CC8D723645DAD009BBEF5 /* NoteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		467CC8B62364449C009BBEF5 /* SafeNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467CC8B92364449C009BBEF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		467CC8BB2364449C009BBEF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		467CC8BB2364449C009BBEF5 /* NoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteVC.swift; sourceTree = "<group>"; };
 		467CC8BE2364449C009BBEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		467CC8C0236444A0009BBEF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		467CC8C3236444A0009BBEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467CC8C5236444A0009BBEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		467CC8CF23644FA5009BBEF5 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		467CC8D123644FE7009BBEF5 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		467CC8D3236450EB009BBEF5 /* NoteObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteObject.swift; sourceTree = "<group>"; };
+		467CC8D523645240009BBEF5 /* NoteDetail VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteDetail VC.swift"; sourceTree = "<group>"; };
+		467CC8D723645DAD009BBEF5 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		467CC8B82364449C009BBEF5 /* SafeNote */ = {
 			isa = PBXGroup;
 			children = (
+				467CC8CE236444CE009BBEF5 /* Utilities */,
+				467CC8CD236444C1009BBEF5 /* View */,
+				467CC8CC236444BA009BBEF5 /* Model */,
+				467CC8CB236444B0009BBEF5 /* Controller */,
 				467CC8B92364449C009BBEF5 /* AppDelegate.swift */,
-				467CC8BB2364449C009BBEF5 /* ViewController.swift */,
 				467CC8BD2364449C009BBEF5 /* Main.storyboard */,
 				467CC8C0236444A0009BBEF5 /* Assets.xcassets */,
 				467CC8C2236444A0009BBEF5 /* LaunchScreen.storyboard */,
 				467CC8C5236444A0009BBEF5 /* Info.plist */,
 			);
 			path = SafeNote;
+			sourceTree = "<group>";
+		};
+		467CC8CB236444B0009BBEF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				467CC8BB2364449C009BBEF5 /* NoteVC.swift */,
+				467CC8D523645240009BBEF5 /* NoteDetail VC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		467CC8CC236444BA009BBEF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				467CC8CF23644FA5009BBEF5 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		467CC8CD236444C1009BBEF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				467CC8D723645DAD009BBEF5 /* NoteCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		467CC8CE236444CE009BBEF5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				467CC8D123644FE7009BBEF5 /* Enums.swift */,
+				467CC8D3236450EB009BBEF5 /* NoteObject.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				467CC8BC2364449C009BBEF5 /* ViewController.swift in Sources */,
+				467CC8BC2364449C009BBEF5 /* NoteVC.swift in Sources */,
 				467CC8BA2364449C009BBEF5 /* AppDelegate.swift in Sources */,
+				467CC8D223644FE7009BBEF5 /* Enums.swift in Sources */,
+				467CC8D023644FA5009BBEF5 /* Note.swift in Sources */,
+				467CC8D623645240009BBEF5 /* NoteDetail VC.swift in Sources */,
+				467CC8D823645DAD009BBEF5 /* NoteCell.swift in Sources */,
+				467CC8D4236450EB009BBEF5 /* NoteObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

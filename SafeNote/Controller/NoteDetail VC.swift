@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NoteDetail VC.swift
 //  SafeNote
 //
 //  Created by Mahmoud Elshakoushy on 10/26/19.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NoteDetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-
 }
-
